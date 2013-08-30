@@ -1,5 +1,5 @@
 web1:
-  name: vanilla
+  name: cloudchaser
   php_version: 5.4.14
   shared_writable_dirs:
     - conf/
@@ -7,6 +7,7 @@ web1:
     - uploads/
   php_extensions:
     - pdo_mysql
+    - memcached
     - mysql
     - mysqli
     - xml
@@ -24,5 +25,5 @@ web1:
   after_build:
         - "mv pagoda/config.php conf/config.php"
 db1: 
-  name: vanilla
+  name: cloudchaserDB
   type: mysql
