@@ -15,7 +15,7 @@
 	$DB_PASSWORD = 'qmQ6ToW3';
 	
 	/** The prefix of the Database Table. */
-	$DB_PREFIX = 'GDN_';
+	$DB_PREFIX = 'GDN_User';
 	
 	/** Database Charset to use in creating database tables. */
 	$DB_CHARSET = 'utf8';
