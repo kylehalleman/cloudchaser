@@ -3,16 +3,16 @@
 //Please add data below
 	
 	/** MySQL hostname */
-	$DB_HOST = '$_SERVER["DB1_HOST"]';
+	$DB_HOST = 'tunnel.pagodabox.com:3306';
 	
 	/** MySQL database username */
-	$DB_NAME = '$_SERVER["DB1_USER"]';
+	$DB_NAME = 'gertrude';
 	
 	/** The name of the database */
-	$DB_USER = '$_SERVER["DB1_NAME"]';
+	$DB_USER = 'vanilla';
 	
 	/** MySQL database password */
-	$DB_PASSWORD = '$_SERVER["DB1_PASS"]';
+	$DB_PASSWORD = 'qmQ6ToW3';
 	
 	/** The prefix of the Database Table. */
 	$DB_PREFIX = 'GDN_';
