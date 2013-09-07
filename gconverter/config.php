@@ -3,13 +3,13 @@
 //Please add data below
 	
 	/** MySQL hostname */
-	$DB_HOST = 'localhost';
+	$DB_HOST = 'tunnel.pagodabox.com:3306';
 	
 	/** MySQL database username */
-	$DB_NAME = 'gertrude';
+	$DB_NAME = 'vanilla';
 	
 	/** The name of the database */
-	$DB_USER = 'vanilla';
+	$DB_USER = 'gertrude';
 	
 	/** MySQL database password */
 	$DB_PASSWORD = 'qmQ6ToW3';
