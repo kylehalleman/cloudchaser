@@ -3,7 +3,7 @@
 //Please add data below
 	
 	/** MySQL hostname */
-	$DB_HOST = 'tunnel.pagodabox.com:3306';
+	$DB_HOST = 'localhost';
 	
 	/** MySQL database username */
 	$DB_NAME = 'gertrude';
