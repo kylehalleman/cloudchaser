@@ -22,8 +22,6 @@ web1:
     - curl
     - soap
     - apc
-  after_build:
-        - "mv pagoda/config.php conf/config.php"
 db1: 
   name: cloudchaserDB
   type: mysql
