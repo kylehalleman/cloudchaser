@@ -282,3 +282,19 @@ if (!function_exists('SignOutUrl')) {
       return '/entry/signout?TransientKey='.urlencode(Gdn::Session()->TransientKey()).($Target ? '&Target='.urlencode($Target) : '');
    }
 }
+
+
+if (!function_exists('FixNl2Br')) {
+   /**
+    * Removes the break above and below tags that have a natural margin.
+    * @param string $Text The text to fix.
+    * @return string
+    * @since 2.1
+    */
+   function FixNl2Br($Text) {
+      $allblocks = '(?:table|dl|ul|ol|pre|blockquote|address|p|h[1-6]|section|article|aside|hgroup|header|footer|nav|figure|figcaption|details|menu|summary)';
+      $Text = preg_replace('!(?:<br\s*/>){1,2}\s*(<' . $allblocks . '[^>]*>)!', "\n$1", $Text);
+      $Text = preg_replace('!(</' . $allblocks . '[^>]*>)\s*(?:<br\s*/>){1,2}!', "$1\n", $Text);
+      return $Text;
+   }
+}
