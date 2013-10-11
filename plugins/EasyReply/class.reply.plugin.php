@@ -12,7 +12,7 @@ You should have received a copy of the GNU General Public License along with Gar
 $PluginInfo['EasyReply'] = array(
    'Name' => 'EasyReply',
    'Description' => "Add a Reply Button to each post/comment(display as '@username'). Also add Ctrl+Enter Reply shortcut. 本插件用于方便用户回复. 来自东北大学先锋网技术部.",
-   'Version' => '1.0',
+   'Version' => '1.1',
    'MobileFriendly' => FALSE,
    'RequiredApplications' => FALSE,
    'RequiredTheme' => FALSE, 
@@ -76,7 +76,7 @@ class EzReplyPlugin extends Gdn_Plugin {
       }
 
       $ReplyURL = "#"."{$Data->InsertName}";
-      $ReplyText = T('Mention');
+      $ReplyText = T('Reply');
       echo <<<QUOTE
       <span class="CommentReply"><a href="{$ReplyURL}">{$ReplyText}</a></span>
 QUOTE;

@@ -2,8 +2,7 @@ function setCursorPosition(ctrl, pos){
   if(ctrl.setSelectionRange){
     ctrl.focus();
     ctrl.setSelectionRange(pos,pos);
-  }
-  else if (ctrl.createTextRange) {
+  } else if (ctrl.createTextRange) {
     var range = ctrl.createTextRange();
     range.collapse(true);
     range.moveEnd('character', pos);
@@ -11,7 +10,6 @@ function setCursorPosition(ctrl, pos){
     range.select();
   }
 }
-
 
 jQuery(document).ready(function(){
   $('textarea#Form_Body').keydown(function (e) {
@@ -35,10 +33,10 @@ jQuery(document).ready(function(){
   $('.CommentReply a').click(function (e) {
     var ipt = $('textarea#Form_Body');
     var name = $(this).attr('href').substring(1);
-    if (ipt.html().indexOf(name)< 0) {
-        ipt.html('@' + name + ' ' + ipt.html());
-    }
-    $('body').animate({ scrollTop: ipt.position().top }, 300);
+    if (ipt.val().indexOf('@' + name) < 0)
+        ipt.val('@' + name + ' ' + ipt.val());
+
+    $('html,body').animate({scrollTop: ipt.offset().top}, 'fast');
     ipt = ipt[0];
     setCursorPosition(ipt, ipt.textLength);
     ipt.focus();
