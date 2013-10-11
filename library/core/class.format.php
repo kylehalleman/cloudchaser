@@ -697,7 +697,7 @@ class Gdn_Format {
             // nl2br
             if(C('Garden.Format.ReplaceNewlines', TRUE)) {
                $Mixed = preg_replace("/(\015\012)|(\015)|(\012)/", "<br />", $Mixed);
-               $Mixed = FixNl2Br($Mixed);
+               // $Mixed = FixNl2Br($Mixed);
 //               $Mixed = wpautop($Mixed);
             }
 
@@ -714,7 +714,7 @@ class Gdn_Format {
             $Result = Gdn_Format::Links($Result);
             if(C('Garden.Format.ReplaceNewlines', TRUE)) {
                $Result = preg_replace("/(\015\012)|(\015)|(\012)/", "<br />", $Result);
-               $Result = FixNl2Br($Result);
+               // $Result = FixNl2Br($Result);
 //               $Result = wpautop($Result);
             }
          }
