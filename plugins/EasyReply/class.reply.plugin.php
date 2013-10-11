@@ -76,7 +76,7 @@ class EzReplyPlugin extends Gdn_Plugin {
       }
 
       $ReplyURL = "#"."{$Data->InsertName}";
-      $ReplyText = T('Reply');
+      $ReplyText = T('Mention');
       echo <<<QUOTE
       <span class="CommentReply"><a href="{$ReplyURL}">{$ReplyText}</a></span>
 QUOTE;
