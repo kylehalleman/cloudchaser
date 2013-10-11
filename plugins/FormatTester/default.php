@@ -9,7 +9,7 @@ $PluginInfo['FormatTester'] = array(
 class TesterPlugin extends Gdn_Plugin {
   public function DiscussionController_AfterCommentMeta_Handler($Sender) {
       //Put you screen name in the following statement and only you will see info
-      $NAME = "BurkeNight";
+      $NAME = "Lucas";
       // --------------------------------------
        $Session = Gdn::Session();
       if ($Session->User->Name == $NAME) {
