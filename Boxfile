@@ -6,20 +6,12 @@ web1:
     - cache/
     - uploads/
   php_extensions:
+    - pdo
     - pdo_mysql
     - mysql
     - mysqli
-    - xml
-    - json
-    - simplexml
-    - mbstring
-    - mcrypt
-    - hash
     - gd
-    - dom
-    - iconv
     - curl
-    - soap
     - apc
 db1: 
   name: cloudchaserDB
