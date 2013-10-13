@@ -7,7 +7,6 @@ web1:
     - uploads/
   php_extensions:
     - pdo_mysql
-    - memcached
     - mysql
     - mysqli
     - xml
