@@ -1927,7 +1927,8 @@ if (!function_exists('ReflectArgs')) {
 
 if (!function_exists('RemoteIP')) {
    function RemoteIP() {
-      return GetValue('REMOTE_ADDR', $_SERVER, 'undefined');
+    //$_SERVER is pagodabox fix for ip addresses
+      return GetValue( $_SERVER['HTTP_X_FORWARDED_FOR'], $_SERVER, 'undefined');
    }
 }
 
