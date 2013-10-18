@@ -295,7 +295,7 @@ class Gdn_Request {
 
    public function IpAddress() {
       //fix for pagodabox, changed frome REMOTE_ADDR to direct server variable
-      return $this->GetValue( $_SERVER['HTTP_X_FORWARDED_FOR'] );
+      return $this->GetValue('HTTP_X_FORWARDED_FOR');
    }
 
    /**
