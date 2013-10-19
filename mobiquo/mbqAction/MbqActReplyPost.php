@@ -45,7 +45,7 @@ Class MbqActReplyPost extends MbqBaseActReplyPost {
                         $oMbqRdEtForumPost = MbqMain::$oClk->newObj('MbqRdEtForumPost');
                         $this->data['result'] = true;
                         $this->data['post_id'] = (string) $oMbqEtForumPost->postId->oriValue;
-                        $this->data['state'] = $state;
+                        $this->data['state'] = (int) $state;
                     } else {
                         MbqError::alert('', '', '', MBQ_ERR_APP);
                     }

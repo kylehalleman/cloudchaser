@@ -29,7 +29,7 @@ Class MbqActGetRawPost extends MbqBaseActGetRawPost {
             $oMbqAclEtForumPost = MbqMain::$oClk->newObj('MbqAclEtForumPost');
             if ($oMbqAclEtForumPost->canAclGetRawPost($oMbqEtForumPost)) {   //acl judge
                 $this->data = $oMbqRdEtForumPost->returnApiDataForumPost($oMbqEtForumPost);
-                $this->data['post_content'] = $oMbqRdEtForumPost->getRawPostContent($oMbqEtForumPost);
+                $this->data['post_content'] = (string) $oMbqRdEtForumPost->getRawPostContent($oMbqEtForumPost);
             } else {
                 MbqError::alert('', '', '', MBQ_ERR_APP);
             }

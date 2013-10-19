@@ -3,7 +3,7 @@
 $PluginInfo['Tapatalk'] = array(
    'Name' => 'Tapatalk',
    'Description' => 'Tapatalk Plugin for Vanilla 2',
-   'Version' => 'vn20_1.3.8',
+   'Version' => 'vn20_1.3.9',
    'Author' => "Tapatalk",
    'AuthorEmail' => 'admin@tapatalk.com',
    'AuthorUrl' => 'http://tapatalk.com',

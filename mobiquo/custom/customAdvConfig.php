@@ -10,7 +10,7 @@ defined('MBQ_IN_IT') or exit;
  * @since  2013-5-7
  * @author Wu ZeTao <578014287@qq.com>
  */
-MbqMain::$customConfig['base']['version'] = 'vn20_1.3.8';
+MbqMain::$customConfig['base']['version'] = 'vn20_1.3.9';
 MbqMain::$customConfig['forum']['offline'] = MbqBaseFdt::getFdt('MbqFdtConfig.forum.offline.range.no');
 MbqMain::$customConfig['forum']['private'] = MbqBaseFdt::getFdt('MbqFdtConfig.forum.private.range.no');
 
