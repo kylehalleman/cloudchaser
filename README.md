@@ -1,4 +1,3 @@
-vanilla-pagoda
-==============
+Public Facing Repository for
 
-Vanilla Forum on PagodaBox
+http://community.cloudchaser.us
